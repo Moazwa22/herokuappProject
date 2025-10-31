@@ -21,6 +21,7 @@ public class LoginTest extends BaseTestClass {
     // Assert.assertEquals(secureAreaPage.getActualMessage(), secureAreaPage.getExpectedSuccessMessage());
      Assert.assertTrue(secureAreaPage.getActualMessage().contains(secureAreaPage.getExpectedSuccessMessage()));
      Assert.assertTrue(secureAreaPage.pageTitleIsDisplayed());
+        loginPage = secureAreaPage.clickLogoutButton();
     }
 
     @Test
