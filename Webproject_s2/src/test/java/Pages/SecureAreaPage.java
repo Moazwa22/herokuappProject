@@ -1,6 +1,5 @@
 package Pages;
 
-import org.apache.commons.logging.Log;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -29,6 +28,10 @@ public class SecureAreaPage{
     }
     public String getExpectedPageTitle(){
         return expectedPageTitle;
+    }
+
+    public boolean pageTitleIsDisplayed(){
+        return getActualPageTitle().contains(getExpectedPageTitle());
     }
 
     public LoginPage clickLogoutButton(){
